@@ -143,5 +143,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById("back-restu").onclick = function() {
-    window.location.href = "http://127.0.0.1:5500/resturants/restu.html"; 
+    window.location.href = "https://sunalgorithms.github.io/resturants/restu.html#"; 
 };
