@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fish-and-chips</title>
+    <link rel="stylesheet" href="fish.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="back-restu" id="back-restu">back</button>
+            <a href="#"><i class='bx bxs-cart bx-flashing' id="cart"></i></a>
+            <!-- View Orders Button -->
+            <button id="view-orders">Admin</button>
+        </div>
+    </nav>
+    <section class="fish-page" id="fish-page">
+        <div class="heading">
+            <h2>FISH $ CHIPS</h2>
+        </div>
+        <!-- container -->
+        <div class="fish-container">
+            <div class="box">
+                <a href="#" id="fish-and-chips"><img src="fish/combo-1.jpg" alt="fish and chips combo-1"></a>
+                <h3>Fish $ Chips</h3>
+                <div class="inside">
+                    <span class="fish-price">170</span>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" id="fish-and-chips"><img src="fish/combo-2.jpg" alt=""></a>
+                <h3>Fish $ Chips</h3>
+                <div class="inside">
+                    <span class="fish-price">170</span>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" id="fish-and-chips"><img src="fish/combo-3.jpg" alt=""></a>
+                <h3>Fish $ Chips</h3>
+                <div class="inside">
+                    <span class="fish-price">170</span>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+            <div class="box">
+                <a href="#" id="fish-and-chips"><img src="fish/combo-4.jpg" alt=""></a>
+                <h3>Fish $ Chips</h3>
+                <div class="inside">
+                    <span class="fish-price">170</span>
+                    <a href="#" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cart-section">
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-content">
+                <h2>Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total Price: <span id="total-price">0</span></p>
+                <input type="text" id="customer-name" placeholder="Enter your name">
+                <input type="text" id="customer-location" placeholder="Location/Place of collection">
+
+                <button id="order-button">Order</button>
+            </div>
+        </div>
+    </section>
+       
+    <script src="fish.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>
