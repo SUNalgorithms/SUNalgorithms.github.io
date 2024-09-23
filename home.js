@@ -1,143 +1,162 @@
-document.getElementById("restuarant").onclick = function() {
-  window.location.href = "resturants/restu.html"; 
+// Toggle menu icon and show/hide navbar
+document.getElementById("menu-icon").onclick = function() {
+  this.classList.toggle("change");
+  var navbar = document.getElementById("navbar");
+  if (navbar.style.display === "flex") {
+      navbar.style.display = "none";
+  } else {
+      navbar.style.display = "flex";
+  }
 };
 
-// home screen
+// Redirect to restaurants page
+document.getElementById("restaurant").onclick = function() {
+  window.location.href = "restaurants/restu.html"; 
+};
+
+// Home screen swiper
 var swiper = new Swiper(".swiper", {
-    effect: "cube",
-    grabCursor: true,
-    loop: true,
-    speed: 1000,
-    cubeEffect: {
-      shadow: false,
-      slideShadows: true,
-      shadowOffset: 10,
-      shadowScale: 0.94,
+  effect: "cube",
+  grabCursor: true,
+  loop: true,
+  speed: 1000,
+  cubeEffect: {
+    shadow: false,
+    slideShadows: true,
+    shadowOffset: 10,
+    shadowScale: 0.94,
+  },
+  autoplay: {
+    delay: 2600,
+    pauseOnMouseEnter: true,
+  },
+  breakpoints: {
+    640: {
+      width: 320,
+      height: 240,
     },
-    autoplay: {
-      delay: 2600,
-      pauseOnMouseEnter: true,
+    768: {
+      width: 480,
+      height: 320,
     },
-  });
-  
-  tsParticles.load("tsparticles", {
-    fpsLimit: 60,
-    backgroundMode: {
+    1024: {
+      width: 640,
+      height: 480,
+    },
+  },
+});
+
+
+// Particles effect
+tsParticles.load("tsparticles", {
+  fpsLimit: 60,
+  backgroundMode: {
       enable: true,
       zIndex: -1,
-    },
-    particles: {
+  },
+  particles: {
       number: {
-        value: 30,
-        density: {
-          enable: true,
-          area: 800,
-        },
+          value: 30,
+          density: {
+              enable: true,
+              area: 800,
+          },
       },
       color: {
-        value: [
-          "#3998D0",
-          "#2EB6AF",
-          "#A9BD33",
-          "#FEC73B",
-          "#F89930",
-          "#F45623",
-          "#D62E32",
-        ],
+          value: [
+              "#3998D0",
+              "#2EB6AF",
+              "#A9BD33",
+              "#FEC73B",
+              "#F89930",
+              "#F45623",
+              "#D62E32",
+          ],
       },
       destroy: {
-        mode: "split",
-        split: {
-          count: 1,
-          factor: {
-            value: 5,
-            random: {
-              enable: true,
-              minimumValue: 4,
-            },
-          },
-          rate: {
-            value: 10,
-            random: {
-              enable: true,
-              minimumValue: 5,
-            },
-          },
-          particles: {
-            collisions: {
-              enable: false,
-            },
-            destroy: {
-              mode: "none",
-            },
-            life: {
+          mode: "split",
+          split: {
               count: 1,
-              duration: {
-                value: 1,
+              factor: {
+                  value: 5,
+                  random: {
+                      enable: true,
+                      minimumValue: 4,
+                  },
               },
-            },
+              rate: {
+                  value: 10,
+                  random: {
+                      enable: true,
+                      minimumValue: 5,
+                  },
+              },
+              particles: {
+                  collisions: {
+                      enable: false,
+                  },
+                  destroy: {
+                      mode: "none",
+                  },
+                  life: {
+                      count: 1,
+                      duration: {
+                          value: 1,
+                      },
+                  },
+              },
           },
-        },
       },
       shape: {
-        type: "circle",
-        stroke: {
-          width: 0,
-          color: "#000000",
-        },
-        polygon: {
-          sides: 5,
-        },
+          type: "circle",
+          stroke: {
+              width: 0,
+              color: "#000000",
+          },
+          polygon: {
+              sides: 5,
+          },
       },
       opacity: {
-        value: 1,
-        random: false,
-        animation: {
-          enable: false,
-          speed: 1,
-          minimumValue: 0.1,
-          sync: false,
-        },
+          value: 1,
+          random: false,
+          animation: {
+              enable: false,
+              speed: 1,
+              minimumValue: 0.1,
+              sync: false,
+          },
       },
       size: {
-        value: 8,
-        random: { 
-          enable: true,
-          minimumValue: 4,
-        },
-        animation: {
-          enable: false,
-          speed: 40,
-          minimumValue: 0.1,
-          sync: false,
-        },
+          value: 8,
+          random: { 
+              enable: true,
+              minimumValue: 4,
+          },
+          animation: {
+              enable: false,
+              speed: 40,
+              minimumValue: 0.1,
+              sync: false,
+          },
       },
       collisions: {
-        enable: true,
-        mode: "destroy",
+          enable: true,
+          mode: "destroy",
       },
       move: {
-        enable: true,
-        speed: 7,
-        direction: "none",
-        random: false,
-        straight: false,
-        out_mode: "out",
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200,
-        },
+          enable: true,
+          speed: 7,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+          },
       },
-    },
-    detectRetina: true,
-  });
-
-  //let search = document.querySelector('.search-box');
-
-  ////document.querySelector('#search-icon').onclick = () => {
-      //search.classList.toggle('active');
-  //}
-
-  // resturants
- 
+  },
+  detectRetina: true,
+});
