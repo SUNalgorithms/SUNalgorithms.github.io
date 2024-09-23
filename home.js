@@ -11,7 +11,7 @@ document.getElementById("menu-icon").onclick = function() {
 
 // Redirect to restaurants page
 document.getElementById("restaurant").onclick = function() {
-  window.location.href = "https://sunalgorithms.github.io/resturants/restu.html/"; 
+  window.location.href = "resturants/restu.html"; 
 };
 
 // Home screen swiper
