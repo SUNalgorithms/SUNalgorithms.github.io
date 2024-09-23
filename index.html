@@ -6,14 +6,10 @@
     <title>Food - Online</title>
     <!--link to css-->
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    /> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <!--Box Icons -->
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     <!--Navbar-->
@@ -22,23 +18,19 @@
             <img src="img/logo.jpeg" alt="">
         </a>
         <!-- Menu-Icon -->
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <!-- links -->
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <button class="nav-btn" id="restuarant">Restuarants</button>
-            <li><a href="#costumers">costumers</a></li>
+        <ul class="navbar" id="navbar">
+            <li><button class="nav-btn" id="home">HOME</button></li>
+            <li><button class="nav-btn" id="restaurant">Restaurants</button></li>
+            <li><button class="nav-btn" id="about">About us</button></li>
         </ul>
-        <!-- Icons -->
-        <div class="header-icon">
-            <i class='bx bx-search' id="search-icon"></i>
-
-        </div>
-        <!-- Serrach box-->
-        <div class="search-box">
-            <input type="search" name="" id="" placeholder="seach...">
-        </div>
+        <!-- Search box -->
+        
     </header>
     <!-- Home -->
     <div id="tsparticles"></div>
@@ -47,7 +39,7 @@
         <h1>Eat First</h1>
         <p>
           Whether you are on Mars, we ensure
-          food is deliverd.
+          food is delivered.
           EAT AND DAY!!
         </p>
       </div>
@@ -58,7 +50,7 @@
             <img src="img/fish/logo.jpg" />
             <div class="cost"></div>
             <div class="overlay">
-              <h1>FISH $ CHIPS</h1>
+              <h1>FISH & CHIPS</h1>
               <p>
                 you can order
               </p>
@@ -114,15 +106,6 @@
       
     </section>
 
-    
-    
-    
-
-
-
-
-
-  
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
