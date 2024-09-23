@@ -127,6 +127,13 @@ header{
       text-align: center;
       padding: 10px 0;
   }
+  .navbar a {
+    padding: 10px 15px; /* Adjust padding for mobile */
+    font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+  header {
+    padding: 10px 20px; /* Adjust header padding for mobile */
+  }
 }
 
 /* Rotate first bar */
@@ -395,6 +402,33 @@ section {
   .swiper {
     width: 300px;
     height: 400px;
+  }
+}
+/* Show menu icon and hide navbar on small screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+  .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your header height */
+      right: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .navbar li {
+      text-align: center;
+      padding: 10px 0;
+  }
+  .navbar a {
+      padding: 10px 15px; /* Adjust padding for mobile */
+      font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+  header {
+      padding: 10px 20px; /* Adjust header padding for mobile */
   }
 }
 
