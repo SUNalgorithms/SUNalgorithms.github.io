@@ -24,9 +24,15 @@
 section {
     padding: 50px 100px;
 }
-img{
-    width: 100%;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+.content h1, .content p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
 body{
     color: var(--text-color);
 }
@@ -48,6 +54,7 @@ header{
 }
 .navbar {
     display: flex;
+    gap: 20px;
 }
 .navbar a {
     padding: 8px 17px;
@@ -72,6 +79,7 @@ header{
   background-color: var(--main-color);
   border-radius: 12px;
   transition: 0.2s all linear;
+  gap: 20px;
 }
 .header-icon {
     font-size: 22px;
@@ -86,37 +94,61 @@ header{
 .header-icon .bx:hover{
     color: var(--main-color);
 }
-#menu-icon{
-    color: var(--bg-color);
-    font-size: 24px;
-    z-index: 100001;
-    cursor: pointer;
-    display: none;
+/* Menu icon styles */
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
-.search-box{
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
+
+.menu-icon div {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
 }
-.search-box.active {
-    top: 110%;
-    box-shadow: var(--box-shadow);
-    transform: 0.2s all linear;
+
+/* Show menu icon and hide navbar on small screens */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+  .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your header height */
+      right: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .navbar li {
+      text-align: center;
+      padding: 10px 0;
+  }
 }
-.search-box input {
-    padding: 20px;
-    border: none;
-    outline: none;
-    width: 100%;
-    font-size: 1rem;
-    color: var(--main-color);
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
 }
-.search-box input::placeholder {
-    font-size: 1rem;
-    font-weight: 500;
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
 }
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Show navbar when menu icon is clicked */
+.change + .navbar {
+  display: flex;
+}
+
 
 
 
@@ -297,6 +329,19 @@ section {
 .logo img {
   width: 130px;
 }
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 @media (max-width: 890px) {
   .logo {
@@ -353,34 +398,4 @@ section {
   }
 }
 
-.btn{
-    padding: 5px 40px;
-    border-radius: 0.3rem;
-    background: var(--main-color);
-    color: var(--bg-color);
-    font-weight: 500;
 
-
-}
-.btn:hover{
-    background: #8a6f4d;
-}
-
-.about {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
-    gap: 1.5rem;
-}
-.about img{
-    border-radius: 0.5rem;
-    width: 35%;
-    height: auto;
-}
-.about-text h2 {
-    font-size: 1,8rem;
-    text-transform: uppercase;
-}
-.about-text p{
-    font-size: 0.938rem;
-    margin: 0.5rem 0 1.1rem;
-}
