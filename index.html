@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food - Online</title>
     <!--link to css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-    <!--Box Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
 </head>
 <body>
     <!--Navbar-->
@@ -17,99 +17,73 @@
         <a href="#" class="logo">
             <img src="img/logo.jpeg" alt="">
         </a>
-        <!-- Menu-Icon -->
-        <div class="menu-icon" id="menu-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-        <!-- links -->
         <ul class="navbar" id="navbar">
-            <li><button class="nav-btn" id="home">HOME</button></li>
-            <li><button class="nav-btn" id="restaurant">Restaurants</button></li>
-            <li><button class="nav-btn" id="about">About us</button></li>
-        </ul>
-        <!-- Search box -->
-        
+          <li><button class="nav-btn" id="home"><i class="fas fa-home"></i><span class="nav-text">HOME</span></button></li>
+          <li><button class="nav-btn" id="restaurant"><i class="fas fa-utensils"></i><span class="nav-text">Restaurants</span></button></li>
+          <li><button class="nav-btn" id="about"><i class="fas fa-map-marker-alt"></i><span class="nav-text">About Us</span></button></li>
+      </ul>
+      
     </header>
     <!-- Home -->
-    <div id="tsparticles"></div>
     <section>
-      <div class="content">
-        <h1>Eat First</h1>
-        <p>
-          Whether you are on Mars, we ensure
-          food is delivered.
-          EAT AND DAY!!
-        </p>
-      </div>
-
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/fish/logo.jpg" />
-            <div class="cost"></div>
-            <div class="overlay">
-              <h1>FISH & CHIPS</h1>
-              <p>
-                you can order
-              </p>
-              <div class="ratings">
-                
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/Romans-Pizza-Logo2.jpg" />
-            <div class="cost"></div>
-            <div class="overlay">
-              <h1>ROMANS-PIZZA</h1>
-              <p>
-                Grab a bite
-              </p>
-              <div class="ratings">
-                
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/KFC-logo.png" />
-            <div class="cost dark-text"></div>
-            <div class="overlay">
-              <h1>KFC</h1>
-              <p>
-                Finger licking good
-              </p>
-              <div class="ratings">
-                
-                <span></span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="img/panarottis.jpeg" />
-            <div class="cost dark-text"></div>
-            <div class="overlay">
-              <h1>PANAROTTIS</h1>
-              <p>
-                by just a piece
-              </p>
-              <div class="ratings">
-                
-                <span></span>
-              </div>
-            </div>
-          </div>
+        <div class="content">
+            <h1>Eat First</h1>
+            <p>
+                Whether you are on Mars, we ensure
+                food is delivered.
+                EAT AND DAY!!
+            </p>
         </div>
-      </div>
-      
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" >
+                    <img src="img/fish/logo.jpg" alt="Logo" class="responsive-img" />
+                    <div class="overlay">
+                        <h1>FISH & CHIPS</h1>
+                        <p>
+                            you can order
+                        </p>
+                        <div class="ratings"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/Romans-Pizza-Logo2.jpg" alt="Logo" class="responsive-img"/>
+                    <div class="overlay">
+                        <h1>ROMANS-PIZZA</h1>
+                        <p>
+                            Grab a bite
+                        </p>
+                        <div class="ratings"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/KFC-logo.png" alt="Logo" class="responsive-img"/>
+                    <div class="overlay">
+                        <h1>KFC</h1>
+                        <p>
+                            Finger licking good
+                        </p>
+                        <div class="ratings"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/panarottis.jpeg"alt="Logo" class="responsive-img" />
+                    <div class="overlay">
+                        <h1>PANAROTTIS</h1>
+                        <p>
+                            by just a piece
+                        </p>
+                        <div class="ratings"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="home.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
