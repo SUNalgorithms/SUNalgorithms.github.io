@@ -154,6 +154,7 @@ section {
 /* SLIDER */
 
 .swiper {
+
   justify-content: center;
   align-items: center;
   position: relative;
@@ -250,6 +251,12 @@ section {
   .content p {
     font-size: 1rem;
   }
+  .swiper{
+    min-height: 70%;
+    min-width: 80%;
+    align-items: center;
+    text-align: center;
+  }
   .swiper .swiper-wrapper{
     height: 153px;
     width: 24px;
@@ -280,6 +287,12 @@ section {
   .content p {
     font-size: 1rem;
   }
+  .swiper{
+    min-height: 70%;
+    min-width: 80%;
+    align-items: center;
+    text-align: center;
+  }
   .swiper .swiper-wrapper{
     
     height: 195px;
@@ -303,8 +316,11 @@ section {
     align-items: flex-start;
     text-align: left;
   } 
-  .swiper{
-    min-height: 40%;
+  .swiper {
+    min-height: 70%;
+    min-width: 80%;
+    align-items: center;
+    text-align: center;
   }
   .swiper .swiper-wrapper{
     height: 250px;
@@ -344,7 +360,7 @@ section {
       "content";
     place-items: center;
     gap: 24px;
-    padding: 60px;
+    padding: 10px;
   }
 
   .swiper {
