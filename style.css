@@ -49,7 +49,7 @@ header{
     align-items: center;
     padding: 18px 100px;
     transition: 0.5s linear;
-    background: var(--text-color);
+    background: #64c4d9;
 }
 .logo img {
     width: 65px;
@@ -376,4 +376,3 @@ section {
     margin-bottom: 20px;
   }
 }
-
